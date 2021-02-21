@@ -1,0 +1,257 @@
+Currency:
+  connection: doctrine
+  tableName: zmc_currency
+  columns:
+    code:
+      type: string(50)
+      notnull: true
+      unique: true
+    name:
+      type: string(130)
+      notnull: true
+    comment:
+      type: string()
+    rate:
+      type: decimal(6,5)
+    isactive:
+      type: boolean
+# end-minicontador-schema
+
+Element:
+  connection: doctrine
+  tableName: zmc_element
+  columns:
+    comment:
+      type: string()
+      notnull: false
+    name:
+      type: string(130)
+      notnull: true
+    code:
+      type: string(50)
+      notnull: true
+      unique: true
+    umid:
+      type: integer
+    entityid:
+      type: integer 
+  relations:
+    Um: { onDelete: CASCADE, local: umid, foreign: id, foreignAlias: Elements }
+    Equivalences: { class: Element, refClass: ElementElementRelation, local: from_id, foreign: to_id, type: many }
+ElementElementRelation:
+  connection: doctrine
+  tableName: zmc_elementelementrelation
+  columns:
+    from_id:
+      type: integer
+      primary: true
+    to_id:
+      type: integer
+      primary: true
+    rate:
+      type: decimal
+  relations:
+    FromElement:
+      class: Element
+      local: from_id
+      onDelete: CASCADE
+    ToElement:
+      class: Element
+      local: to_id
+      onDelete: CASCADE
+
+Costcenter:
+  connection: doctrine
+  tableName: zmc_costcenter
+  columns:
+    code:
+      type: string(50)
+      notnull: true
+      unique: true
+    name:
+      type: string(130)
+      notnull: true
+    comment:
+      type: string()
+      notnull: false
+    parentid:
+      type: integer
+    path:
+      type: string
+    icon:
+      type: string()   
+    entityid:
+      type: integer    
+  relations:
+    Costcenter: { onDelete: CASCADE, local: parentid, foreign: id, foreignAlias: Costcenters }
+    Elements: { class: Element, refClass: CostcenterElementRelation, local: costcenter_id, foreign: element_id, type: many }
+CostcenterElementRelation:
+  connection: doctrine
+  tableName: zmc_costcenterelementrelation
+  columns:
+    costcenter_id:
+      type: integer
+      primary: true
+    element_id:
+      type: integer
+      primary: true
+  relations:
+    Costcenter:
+      class: Costcenter
+      local: costcenter_id
+      onDelete: CASCADE
+    Element:
+      class: Element
+      local: element_id
+      onDelete: CASCADE
+
+Um:
+  connection: doctrine
+  tableName: zmc_um
+  columns:
+    code:
+      type: string(50)
+      notnull: true
+      unique: true
+    name:
+      type: string(130)
+      notnull: true
+    comment:
+      type: string()
+      notnull: false
+  relations:
+    Equivalences: { class: Um, refClass: UmUmRelation, local: from_id, foreign: to_id, type: many }
+UmUmRelation:
+  connection: doctrine
+  tableName: zmc_umumrelation
+  columns:
+    from_id:
+      type: integer
+      primary: true
+    to_id:
+      type: integer
+      primary: true
+    rate:
+      type: decimal
+  relations:
+    FromUm:
+      class: Um
+      local: from_id
+      onDelete: CASCADE
+    ToUm:
+      class: Um
+      local: to_id
+      onDelete: CASCADE
+
+Account:
+  connection: doctrine
+  tableName: zmc_account
+  columns:
+    code:
+      type: string(50)
+      notnull: true
+      unique: true
+    name:
+      type: string(130)
+      notnull: true
+    comment:
+      type: string()
+      notnull: false
+    path:
+      type: string()
+    parentid:
+      type: integer()
+      notnull: false
+    costcenterid:
+      type: integer()
+    elementid:
+      type: integer()
+    nature:
+      type: boolean
+      default: 1
+    manualcode:
+      type: boolean
+      default: 0
+    icon:
+      type: string()   
+    entityid:
+      type: integer 
+  relations:
+    Account: { onDelete: CASCADE, local: parentid, foreign: id, foreignAlias: Accounts }
+    Costcenter: { onDelete: CASCADE, local: costcenterid, foreign: id, foreignAlias: Accounts }
+    Element: { onDelete: CASCADE, local: elementid, foreign: id, foreignAlias: Accounts }
+
+Comprobant:
+  actAs:
+    Timestampable: ~
+  connection: doctrine
+  tableName: zmc_comprobant
+  columns:
+    code:
+      type: string(50)
+      notnull: true
+      unique: true
+    name:
+      type: string(130)
+      notnull: true
+    comment:
+      type: string()
+      notnull: false
+    creationdate:
+      type: datetime
+    is_modificable:
+      type: boolean
+      default: 1
+    entityid:
+      type: integer 
+
+Transaction:
+  connection: doctrine
+  tableName: zmc_transaction
+  columns:
+    comment:
+      type: string()
+    debit:
+      type: decimal()
+    credit:
+      type: decimal()
+    rate:
+      type: decimal()
+    currencyid:
+      type: integer
+    comprobantid:
+      type: integer
+    accountid:
+      type: integer
+    amount:
+      type: decimal()
+    umid:
+      type: integer
+    creditave:
+      type: decimal()
+  relations:
+    Currency: { onDelete: CASCADE, local: currencyid, foreign: id, foreignAlias: Transactions }
+    Comprobant: { onDelete: CASCADE, local: comprobantid, foreign: id, foreignAlias: Transactions }
+    Account: { onDelete: CASCADE, local: accountid, foreign: id, foreignAlias: Transactions }
+    Um: { onDelete: CASCADE, local: umid, foreign: id, foreignAlias: Transactions }
+
+CloseUp:
+  actAs:
+    Timestampable: ~
+  connection: doctrine
+  tableName: zmc_closeup
+  columns:
+    code:
+      type: string(50)
+      notnull: true
+      unique: true
+    name:
+      type: string(130)
+      notnull: true
+    comment:
+      type: string()
+      notnull: false
+    creationdate:
+      type: datetime
+    entityid:
+      type: integer 

@@ -1,0 +1,216 @@
+Element:
+  Cafe:
+    code: "<?php echo md5(strtoupper('Café')) ?>"
+    name: 'Café'
+    Um: [Lata]
+    entityid: 1
+  CafeE:
+    code: "<?php echo md5(strtoupper('Café elaborado')) ?>"
+    name: 'Café elaborado'
+    Um: [Termo]
+    entityid: 1
+  Leche:
+    code: "<?php echo md5(strtoupper('Leche')) ?>"
+    name: 'Leche'
+    Um: [Gramo]
+    entityid: 1
+  LecheE:
+    code: "<?php echo md5(strtoupper('Leche elaborada')) ?>"
+    name: 'Leche elaborada'
+    Um: [Vaso]
+    entityid: 1
+  Chocolate:
+    code: "<?php echo md5(strtoupper('Chocolate en polvo')) ?>"
+    name: 'Chocolate en polvo'
+    Um: [Gramo]
+    entityid: 1
+  ChocolateE:
+    code: "<?php echo md5(strtoupper('Chocolate elaborado')) ?>"
+    name: 'Chocolate elaborado'
+    Um: [Vaso]
+    entityid: 1
+  Batido:
+    code: "<?php echo md5(strtoupper('Polvo para batido')) ?>"
+    name: 'Polvo para batido'
+    Um: [Gramo]
+    entityid: 1
+  BatidoE:
+    code: "<?php echo md5(strtoupper('Batido elaborado')) ?>"
+    name: 'Batido elaborado'
+    Um: [Vaso]
+    entityid: 1
+  Refresco:
+    code: "<?php echo md5(strtoupper('Refresco')) ?>"
+    name: 'Refresco'
+    Um: [Vaso]
+    entityid: 1
+  RefrescoE:
+    code: "<?php echo md5(strtoupper('Refresco de lata')) ?>"
+    name: 'Refresco de lata'
+    Um: [Lata]
+    entityid: 1
+  Yogurt:
+    code: "<?php echo md5(strtoupper('Yogurt')) ?>"
+    name: 'Yogurt'
+    Um: [Litro]
+    entityid: 1
+  YogurtE:
+    code: "<?php echo md5(strtoupper('Yogurt elaborado')) ?>"
+    name: 'Yogurt elaborado'
+    Um: [Vaso]
+    entityid: 1
+  Pan:
+    code: "<?php echo md5(strtoupper('Pan en bola')) ?>"
+    name: 'Pan en bola'
+    Um: [Unidad]
+    entityid: 1
+  PanE:
+    code: "<?php echo md5(strtoupper('Pan telera')) ?>"
+    name: 'Pan telera'
+    Um: [Unidad]
+    entityid: 1
+  Hamburguesa:
+    code: "<?php echo md5(strtoupper('Hamburguesa')) ?>"
+    name: 'Hamburguesa'
+    Um: [Unidad]
+    entityid: 1
+  Jamon:
+    code: "<?php echo md5(strtoupper('Jamón')) ?>"
+    name: 'Jamón'
+    Um: [Unidad]
+    entityid: 1
+  Queso5:
+    code: "<?php echo md5(strtoupper('Queso 5')) ?>"
+    name: 'Queso 5'
+    Um: [Unidad]
+    entityid: 1
+  Queso10:
+    code: "<?php echo md5(strtoupper('Queso 10')) ?>"
+    name: 'Queso 10'
+    Um: [Unidad]
+    entityid: 1
+  Mantequilla:
+    code: "<?php echo md5(strtoupper('Mantequilla')) ?>"
+    name: 'Mantequilla'
+    Um: [Unidad]
+    entityid: 1
+  Salchicha:
+    code: "<?php echo md5(strtoupper('Salchicha')) ?>"
+    name: 'Salchicha'
+    Um: [Unidad]
+    entityid: 1
+  Panque:
+    code: "<?php echo md5(strtoupper('Panqué')) ?>"
+    name: 'Panqué'
+    Um: [Unidad]
+    entityid: 1
+  PastaMani2:
+    code: "<?php echo md5(strtoupper('Pasta de maní 2')) ?>"
+    name: 'Pasta de maní 2'
+    Um: [Unidad]
+    entityid: 1
+  PastaMani5:
+    code: "<?php echo md5(strtoupper('Pasta de maní 5')) ?>"
+    name: 'Pasta de maní 5'
+    Um: [Unidad]
+    entityid: 1
+  Biscocho:
+    code: "<?php echo md5(strtoupper('Biscocho')) ?>"
+    name: 'Biscocho'
+    Um: [Unidad]
+    entityid: 1
+  Guataquita:
+    code: "<?php echo md5(strtoupper('Guataquita')) ?>"
+    name: 'Guataquita'
+    Um: [Unidad]
+    entityid: 1
+  Polvoron:
+    code: "<?php echo md5(strtoupper('Polvorón')) ?>"
+    name: 'Polvorón'
+    Um: [Unidad]
+    entityid: 1
+  Nayara:
+    code: "<?php echo md5(strtoupper('Nayara')) ?>"
+    name: 'Nayara'
+    Um: [Unidad]
+    entityid: 1
+  Chocomani:
+    code: "<?php echo md5(strtoupper('Chocomani')) ?>"
+    name: 'Chocomani'
+    Um: [Unidad]
+    entityid: 1
+  TurronCoco:
+    code: "<?php echo md5(strtoupper('Turron de coco')) ?>"
+    name: 'Turron de coco'
+    Um: [Unidad]
+    entityid: 1
+  Marquesita:
+    code: "<?php echo md5(strtoupper('Marquesita')) ?>"
+    name: 'Marquesita'
+    Um: [Unidad]
+    entityid: 1
+  Rollito:
+    code: "<?php echo md5(strtoupper('Rollito')) ?>"
+    name: 'Rollito'
+    Um: [Unidad]
+    entityid: 1
+  Pastel:
+    code: "<?php echo md5(strtoupper('Pastel')) ?>"
+    name: 'Pastel'
+    Um: [Unidad]
+    entityid: 1
+  Helado:
+    code: "<?php echo md5(strtoupper('Helado')) ?>"
+    name: 'Helado'
+    Um: [Unidad]
+    entityid: 1
+  Barquilla:
+    code: "<?php echo md5(strtoupper('Barquilla')) ?>"
+    name: 'Barquilla'
+    Um: [Unidad]
+    entityid: 1
+  Eclear:
+    code: "<?php echo md5(strtoupper('Eclear')) ?>"
+    name: 'Eclear'
+    Um: [Unidad]
+    entityid: 1
+  Empanadilla:
+    code: "<?php echo md5(strtoupper('Empanadilla')) ?>"
+    name: 'Empanadilla'
+    Um: [Unidad]
+    entityid: 1
+  Salario:
+    code: "<?php echo md5(strtoupper('Salario')) ?>"
+    name: 'Salario'
+    Um: [Persona]
+    entityid: 1
+  Electricidad:
+    code: "<?php echo md5(strtoupper('Electricidad')) ?>"
+    name: 'Electricidad'
+    Um: [Kilowatts]
+    entityid: 1
+  Aceite:
+    code: "<?php echo md5(strtoupper('Aceite')) ?>"
+    name: 'Aceite'
+    Um: [Litro]
+    entityid: 1
+    
+  BocaditoJamonQueso:
+    code: "<?php echo md5(strtoupper('Bocadito de jamón y queso')) ?>"
+    name: 'Bocadito de jamón y queso'
+    Um: [Unidad]
+    entityid: 1
+
+ElementElementRelation:
+  BocaditoJamonQueso-Pan:
+    FromElement: [BocaditoJamonQueso]
+    ToElement: [Pan]
+    rate: 1
+  BocaditoJamonQueso-Jamon:
+    FromElement: [BocaditoJamonQueso]
+    ToElement: [Jamon]
+    rate: 1
+  BocaditoJamonQueso-Queso5:
+    FromElement: [BocaditoJamonQueso]
+    ToElement: [Queso5]
+    rate: 1

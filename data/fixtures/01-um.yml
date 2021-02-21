@@ -1,0 +1,63 @@
+Um:
+  Lata:
+    code: "<?php echo md5(strtoupper('Lata')) ?>"
+    name: 'Lata'
+  Termo:
+    code: "<?php echo md5(strtoupper('Termo')) ?>"
+    name: 'Termo'
+  Vaso:
+    code: "<?php echo md5(strtoupper('Vaso')) ?>"
+    name: 'Vaso'
+  Unidad:
+    code: "<?php echo md5(strtoupper('Unidad')) ?>"
+    name: 'Unidad'
+  Taza:
+    code: "<?php echo md5(strtoupper('Taza')) ?>"
+    name: 'Taza'
+  Mazo:
+    code: "<?php echo md5(strtoupper('Mazo')) ?>"
+    name: 'Mazo'
+  Litro:
+    code: "<?php echo md5(strtoupper('Litro')) ?>"
+    name: 'Litro'
+  Libra:
+    code: "<?php echo md5(strtoupper('Libra')) ?>"
+    name: 'Libra'
+  Onza:
+    code: "<?php echo md5(strtoupper('Onza')) ?>"
+    name: 'Onza'
+  Paquete:
+    code: "<?php echo md5(strtoupper('Paquete')) ?>"
+    name: 'Paquete'
+  Gramo:
+    code: "<?php echo md5(strtoupper('Gramo')) ?>"
+    name: 'Gramo'
+  Persona:
+    code: "<?php echo md5(strtoupper('Persona')) ?>"
+    name: 'Persona'
+  Kilowatts:
+    code: "<?php echo md5(strtoupper('Kilowatts')) ?>"
+    name: 'Kilowatts'
+
+
+UmUmRelation:
+  Lata-Termo:
+    FromUm: [Lata]
+    ToUm: [Termo]
+    rate: 4
+  Termo-Taza:
+    FromUm: [Termo]
+    ToUm: [Taza]
+    rate: 8
+#  Litro-Vaso:
+#    FromUm: [Litro]
+#    ToUm: [Vaso]
+#    rate: 4
+#  Libra-Onza:
+#    FromUm: [Libra]
+#    ToUm: [Onza]
+#    rate: 16
+#  Libra-Paquete:
+#    FromUm: [Libra]
+#    ToUm: [Paquete]
+#    rate: 1

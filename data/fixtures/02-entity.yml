@@ -1,0 +1,26 @@
+<?php $entities = array('Reynerio Cruz Hechavarria', 'UBPC Martires del Moncada', 'Restaurante 1920') ?>
+
+Entity:
+<?php for ($i = 0; $i < count($entities) ; $i++): ?>
+  Entity<?php echo $i ?>:
+    code: "<?php echo md5(strtoupper($entities[$i])) ?>"
+    name: "<?php echo $entities[$i] ?>"
+<?php endfor ?>
+
+
+EntityUserRelation:
+<?php for ($i = 0; $i < count($entities) ; $i++): ?>
+  UserAdmin<?php echo $i ?>:
+    entity_id: '<?php echo $i+1 ?>'
+    sfGuardUser: User_admin
+<?php if(rand(1,10)%2==0): ?>
+  UserAdvanced<?php echo $i ?>:
+    entity_id: '<?php echo $i+1 ?>'
+    sfGuardUser: User_advanced
+<?php endif; ?> 
+<?php if(rand(1,10)%2==0): ?>
+  UserBasic<?php echo $i ?>:
+    entity_id: '<?php echo $i+1 ?>'
+    sfGuardUser: User_basic
+<?php endif; ?> 
+<?php endfor ?>

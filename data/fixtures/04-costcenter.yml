@@ -1,0 +1,207 @@
+Costcenter:
+  C1:
+    code: "<?php echo md5(strtoupper('Mi Negocio')) ?>"
+    name: 'Cobransa'
+    path: '/NULL/1'
+    entityid: 1
+  C11:
+    code: "<?php echo md5(strtoupper('ALMACÉN')) ?>"
+    name: 'ALMACÉN'
+    Costcenter: [C1]
+    path: '/NULL/1/2'
+    entityid: 1
+  C12:
+    code: "<?php echo md5(strtoupper('Cafetería1')) ?>"
+    name: 'Cafetería1'
+    comment: 'Cafetería de Cobransa'
+    Costcenter: [C1]
+    path: '/NULL/1/3'
+    entityid: 1
+  C14:
+    code: "<?php echo md5(strtoupper('Mecanografia1')) ?>"
+    name: 'Mecanografia'
+    Costcenter: [C1]
+    path: '/NULL/1/4'
+    entityid: 1
+
+CostcenterElementRelation:
+  C11-CafeE:
+    Costcenter: [C11]
+    Element: [CafeE]
+  C11-ChocolateE:
+    Costcenter: [C11]
+    Element: [ChocolateE]
+  C11-BatidoE:
+    Costcenter: [C11]
+    Element: [BatidoE]
+  C11-RefrescoE:
+    Costcenter: [C11]
+    Element: [RefrescoE]
+  C11-YogurtE:
+    Costcenter: [C11]
+    Element: [YogurtE]
+  C11-PastaMani2:
+    Costcenter: [C11]
+    Element: [PastaMani2]
+  C11-PastaMani5:
+    Costcenter: [C11]
+    Element: [PastaMani5]
+  C11-Biscocho:
+    Costcenter: [C11]
+    Element: [Biscocho]
+  C11-Guataquita:
+    Costcenter: [C11]
+    Element: [Guataquita]
+  C11-Polvoron:
+    Costcenter: [C11]
+    Element: [Polvoron]
+  C11-Nayara:
+    Costcenter: [C11]
+    Element: [Nayara]
+  C11-Chocomani:
+    Costcenter: [C11]
+    Element: [Chocomani]
+  C11-TurronCoco:
+    Costcenter: [C11]
+    Element: [TurronCoco]
+  C11-Marquesita:
+    Costcenter: [C11]
+    Element: [Marquesita]
+  C11-Rollito:
+    Costcenter: [C11]
+    Element: [Rollito]
+  C11-Pastel:
+    Costcenter: [C11]
+    Element: [Pastel]
+  C11-BocaditoJamonQueso:
+    Costcenter: [C11]
+    Element: [BocaditoJamonQueso]
+  C11-Salario:
+    Costcenter: [C11]
+    Element: [Salario]
+  C11-Electricidad:
+    Costcenter: [C11]
+    Element: [Electricidad]
+
+  C12-CafeE:
+    Costcenter: [C12]
+    Element: [CafeE]
+  C12-ChocolateE:
+    Costcenter: [C12]
+    Element: [ChocolateE]
+  C12-BatidoE:
+    Costcenter: [C12]
+    Element: [BatidoE]
+  C12-RefrescoE:
+    Costcenter: [C12]
+    Element: [RefrescoE]
+#  C12-YogurtE:
+#    Costcenter: [C12]
+#    Element: [YogurtE]
+#  C12-PastaMani2:
+#    Costcenter: [C12]
+#    Element: [PastaMani2]
+#  C12-PastaMani5:
+#    Costcenter: [C12]
+#    Element: [PastaMani5]
+#  C12-Biscocho:
+#    Costcenter: [C12]
+#    Element: [Biscocho]
+#  C12-Guataquita:
+#    Costcenter: [C12]
+#    Element: [Guataquita]
+#  C12-Polvoron:
+#    Costcenter: [C12]
+#    Element: [Polvoron]
+#  C12-Nayara:
+#    Costcenter: [C12]
+#    Element: [Nayara]
+#  C12-Chocomani:
+#    Costcenter: [C12]
+#    Element: [Chocomani]
+#  C12-TurronCoco:
+#    Costcenter: [C12]
+#    Element: [TurronCoco]
+#  C12-Marquesita:
+#    Costcenter: [C12]
+#    Element: [Marquesita]
+#  C12-Rollito:
+#    Costcenter: [C12]
+#    Element: [Rollito]
+#  C12-Pastel:
+#    Costcenter: [C12]
+#    Element: [Pastel]
+#  C12-BocaditoJamonQueso:
+#    Costcenter: [C12]
+#    Element: [BocaditoJamonQueso]
+#  C12-Salario:
+#    Costcenter: [C12]
+#    Element: [Salario]
+#  C12-Electricidad:
+#    Costcenter: [C12]
+#    Element: [Electricidad]
+#
+#  C13-Aceite:
+#    Costcenter: [C13]
+#    Element: [Aceite]
+#  C13-Salario:
+#    Costcenter: [C13]
+#    Element: [Salario]
+#
+#  C14-CafeE:
+#    Costcenter: [C14]
+#    Element: [CafeE]
+#  C14-ChocolateE:
+#    Costcenter: [C14]
+#    Element: [ChocolateE]
+#  C14-BatidoE:
+#    Costcenter: [C14]
+#    Element: [BatidoE]
+#  C14-RefrescoE:
+#    Costcenter: [C14]
+#    Element: [RefrescoE]
+#  C14-YogurtE:
+#    Costcenter: [C14]
+#    Element: [YogurtE]
+#  C14-PastaMani2:
+#    Costcenter: [C14]
+#    Element: [PastaMani2]
+#  C14-PastaMani5:
+#    Costcenter: [C14]
+#    Element: [PastaMani5]
+#  C14-Biscocho:
+#    Costcenter: [C14]
+#    Element: [Biscocho]
+#  C14-Guataquita:
+#    Costcenter: [C14]
+#    Element: [Guataquita]
+#  C14-Polvoron:
+#    Costcenter: [C14]
+#    Element: [Polvoron]
+#  C14-Nayara:
+#    Costcenter: [C14]
+#    Element: [Nayara]
+#  C14-Chocomani:
+#    Costcenter: [C14]
+#    Element: [Chocomani]
+#  C14-TurronCoco:
+#    Costcenter: [C14]
+#    Element: [TurronCoco]
+#  C14-Marquesita:
+#    Costcenter: [C14]
+#    Element: [Marquesita]
+#  C14-Rollito:
+#    Costcenter: [C14]
+#    Element: [Rollito]
+#  C14-Pastel:
+#    Costcenter: [C14]
+#    Element: [Pastel]
+#  C14-BocaditoJamonQueso:
+#    Costcenter: [C14]
+#    Element: [BocaditoJamonQueso]
+#  C14-Aceite:
+#    Costcenter: [C14]
+#    Element: [Aceite]
+#  C14-Electricidad:
+#    Costcenter: [C14]
+#    Element: [Electricidad]

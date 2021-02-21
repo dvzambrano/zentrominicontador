@@ -1,0 +1,217 @@
+sfGuardUser:
+  User_admin:
+    first_name:  Daniel
+    last_name:  Velazquez Zamora
+    email_address:  admin@domain.com
+    username:       admin
+    password:       admin
+    is_super_admin: true
+    Groups:         [AdminGroup]
+  User_advanced:
+    first_name:  Rafael
+    last_name:  Avila Gonzalez
+    email_address:  advanced@domain.com
+    username:       advanced
+    password:       advanced
+    Groups:         [AdvancedGroup]
+  User_basic:
+    first_name:  Maira
+    last_name:  Perez Ramos
+    email_address:  basic@domain.com
+    username:       basic
+    password:       basic
+    Groups:         [BasicGroup]
+
+sfGuardGroup:
+  AdminGroup:
+    name:           admin
+    description:    Administrador(a)
+    Permissions:    [manageaccount, managecomprobant, managecostcenter, manageelement, manageum, managecurrency, managetransaction, manageconfiguration, managemodule, manageuser, manageperson, managelog, managefiles, managecharts, managecalendar, managecontacttype, manageentity]
+  AdvancedGroup:
+    name:           advanced
+    description:    Avanzado(a)
+    Permissions:    [manageaccount, managecomprobant, managecostcenter, manageelement, manageum, managecurrency, manageuser, managelog]
+  BasicGroup:
+    name:           basic
+    description:    Usuario(a)
+    Permissions:    [manageconfiguration]
+
+sfGuardPermission:
+  managemodule:
+    name:           managemodule
+    description:    'Administrar módulos'
+  managemoduleadd:
+    name:           managemoduleadd
+    description:    'Administrar módulos (adicionar)'
+  managemoduleedit:
+    name:           managemoduleedit
+    description:    'Administrar módulos (editar)'
+  managemoduledelete:
+    name:           managemoduledelete
+    description:    'Administrar módulos (eliminar)'
+    
+  manageuser:
+    name:           manageuser
+    description:    'Administrar usuarios'
+  manageuseradd:
+    name:           manageuseradd
+    description:    'Administrar usuarios (adicionar)'
+  manageuseredit:
+    name:           manageuseredit
+    description:    'Administrar usuarios (editar)'
+  manageuserdelete:
+    name:           manageuserdelete
+    description:    'Administrar usuarios (eliminar)'
+
+  manageperson:
+    name:           manageperson
+    description:    'Administrar personas'
+  managepersonadd:
+    name:           managepersonadd
+    description:    'Administrar personas (adicionar)'
+  managepersonedit:
+    name:           managepersonedit
+    description:    'Administrar personas (editar)'
+  managepersondelete:
+    name:           managepersondelete
+    description:    'Administrar personas (eliminar)'
+
+  managefiles:
+    name:           managefiles
+    description:    'Administrar archivos'
+
+  managelog:
+    name:           managelog
+    description:    'Administrar trazas'
+
+  managecharts:
+    name:           managecharts
+    description:    'Administrar graficos'
+
+  managecalendar:
+    name:           managecalendar
+    description:    'Administrar calendario'
+
+  manageconfiguration:
+    name:           manageconfiguration
+    description:    'Administrar configuracion global'
+    
+  managecontacttype:
+    name:           managecontacttype
+    description:    'Administrar tipos de contacto'
+  managecontacttypeadd:
+    name:           managecontacttypeadd
+    description:    'Administrar tipos de contacto (adicionar)'
+  managecontacttypeedit:
+    name:           managecontacttypeedit
+    description:    'Administrar tipos de contacto (editar)'
+  managecontacttypedelete:
+    name:           managecontacttypedelete
+    description:    'Administrar tipos de contacto (eliminar)'
+    
+  manageentity:
+    name:           manageentity
+    description:    'Administrar entidades'
+  manageentityadd:
+    name:           manageentityadd
+    description:    'Administrar entidades (adicionar)'
+  manageentityedit:
+    name:           manageentityedit
+    description:    'Administrar entidades (editar)'
+  manageentitydelete:
+    name:           manageentitydelete
+    description:    'Administrar entidades (eliminar)'
+  manageselfentity:
+    name:           manageselfentity
+    description:    'Administrar propia entidad'
+    
+  manageaccount:
+    name:           manageaccount
+    description:    'Administrar cuentas'
+  manageaccountadd:
+    name:           manageaccountadd
+    description:    'Administrar cuentas (adicionar)'
+  manageaccountedit:
+    name:           manageaccountedit
+    description:    'Administrar cuentas (editar)'
+  manageaccountdelete:
+    name:           manageaccountdelete
+    description:    'Administrar cuentas (eliminar)'
+  manageaccountsplit:
+    name:           manageaccountsplit
+    description:    'Aperturar cuentas para análisis'
+  manageaccountconsolidate:
+    name:           manageaccountconsolidate
+    description:    'Consolidar saldos de cuentas'
+    
+  managecomprobant:
+    name:           managecomprobant
+    description:    'Administrar comprobantes'
+  managecomprobantadd:
+    name:           managecomprobantadd
+    description:    'Administrar comprobantes (adicionar)'
+  managecomprobantedit:
+    name:           managecomprobantedit
+    description:    'Administrar comprobantes (editar)'
+  managecomprobantdelete:
+    name:           managecomprobantdelete
+    description:    'Administrar comprobantes (eliminar)'
+    
+  managecostcenter:
+    name:           managecostcenter
+    description:    'Administrar negocio'
+  managecostcenteradd:
+    name:           managecostcenteradd
+    description:    'Administrar negocio (adicionar)'
+  managecostcenteredit:
+    name:           managecostcenteredit
+    description:    'Administrar negocio (editar)'
+  managecostcenterdelete:
+    name:           managecostcenterdelete
+    description:    'Administrar negocio (eliminar)'
+  managecostcenterconsolidate:
+    name:           managecostcenterconsolidate
+    description:    'Consolidar elementos de negocio'
+    
+  manageelement:
+    name:           manageelement
+    description:    'Administrar elementos'
+  manageelementadd:
+    name:           manageelementadd
+    description:    'Administrar elementos (adicionar)'
+  manageelementedit:
+    name:           manageelementedit
+    description:    'Administrar elementos (editar)'
+  manageelementdelete:
+    name:           manageelementdelete
+    description:    'Administrar elementos (eliminar)'
+    
+  manageum:
+    name:           manageum
+    description:    'Administrar unidades de medida'
+  manageumadd:
+    name:           manageumadd
+    description:    'Administrar unidades de medida (adicionar)'
+  manageumedit:
+    name:           manageumedit
+    description:    'Administrar unidades de medida (editar)'
+  manageumdelete:
+    name:           manageumdelete
+    description:    'Administrar unidades de medida (eliminar)'
+    
+  managecurrency:
+    name:           managecurrency
+    description:    'Administrar monedas'
+  managecurrencyadd:
+    name:           managecurrencyadd
+    description:    'Administrar monedas (adicionar)'
+  managecurrencyedit:
+    name:           managecurrencyedit
+    description:    'Administrar monedas (editar)'
+  managecurrencydelete:
+    name:           managecurrencydelete
+    description:    'Administrar monedas (eliminar)'
+
+  managetransaction:
+    name:           managetransaction
+    description:    'Administrar balances'
